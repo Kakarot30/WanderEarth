@@ -91,6 +91,29 @@ app.use((req, res, next) => {
   next();
 });
 
+app.get(
+  "/",
+  wrapAsync(async (req, res) => {
+    const allListings = await Listing.find({});
+    res.render("listings/index.ejs", { allListings });
+  })
+);
+
+app.get(
+  "/listings/filter/:category",
+  wrapAsync(async (req, res) => {
+    const { category } = req.params;
+    const allListings = await Listing.find({ category: category });
+    // console.log(allListings);
+    if (!allListings) {
+      req.flash("error", "For this category ,there is no listing!");
+      res.redirect("/listings");
+    }
+
+    res.render("listings/index.ejs", { allListings });
+  })
+);
+
 app.use("/listings", listingRouter);
 app.use("/listings/:id/reviews", reviewsRouter);
 app.use("/", userRouter);
