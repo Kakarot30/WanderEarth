@@ -54,8 +54,8 @@ CLOUDINARY_SECRET=your_cloudinary_api_secret
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/wanderlust.git
-   cd wanderlust
+   git clone https://github.com/Kakarot30/wanderEarth.git
+   cd wanderEarth
    ```
 
 2. **Install dependencies:**
