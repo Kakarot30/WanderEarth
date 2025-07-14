@@ -1,33 +1,45 @@
-# WanderEarth - Travel Listings Web App
+<p align="center">
+  <img src="https://img.shields.io/badge/Node.js-18.x-green?logo=node.js" alt="Node.js">
+  <img src="https://img.shields.io/badge/Express.js-4.x-black?logo=express" alt="Express.js">
+  <img src="https://img.shields.io/badge/MongoDB-6.x-brightgreen?logo=mongodb" alt="MongoDB">
+  <img src="https://img.shields.io/badge/Cloudinary-Image-blue?logo=cloudinary" alt="Cloudinary">
+  <img src="https://img.shields.io/badge/Bootstrap-5.x-purple?logo=bootstrap" alt="Bootstrap">
+</p>
 
-WanderEarth is a full-stack web application for sharing, discovering, and reviewing travel listings. Users can create accounts, add new listings with images, leave reviews, and manage their own content. The app uses Node.js, Express, MongoDB, EJS, Cloudinary for image storage, and Passport.js for authentication.
+<h1 align="center">🌍 WanderEarth - Travel Listings Web App</h1>
 
----
-
-## Features
-
-- User authentication (register, login, logout)
-- Create, edit, and delete travel listings
-- Upload listing images (stored on Cloudinary)
-- Leave reviews and ratings on listings
-- Delete reviews (with proper permissions)
-- Flash messages for user feedback
-- Responsive UI with Bootstrap
+<p align="center">
+  <b>Share, discover, and review the best travel spots around the world!</b>
+</p>
 
 ---
 
-## Tech Stack
+## ✨ Features
 
-- **Backend:** Node.js, Express.js, MongoDB, Mongoose
-- **Frontend:** EJS, Bootstrap
-- **Authentication:** Passport.js (Local Strategy)
-- **Image Uploads:** Multer, Cloudinary, multer-storage-cloudinary
-- **Validation:** Joi
-- **Session Store:** connect-mongo
+- 🔐 User authentication (register, login, logout)
+- 🏝️ Create, edit, and delete travel listings
+- 🖼️ Upload listing images (Cloudinary integration)
+- ⭐ Leave reviews and ratings on listings
+- 🗑️ Delete reviews (with permissions)
+- 💬 Flash messages for user feedback
+- 📱 Responsive UI with Bootstrap
 
 ---
 
-## Prerequisites
+## 🛠️ Tech Stack
+
+| Layer        | Technology                                    |
+| ------------ | --------------------------------------------- |
+| Backend      | Node.js, Express.js, MongoDB, Mongoose        |
+| Frontend     | EJS, Bootstrap                                |
+| Auth         | Passport.js (Local Strategy)                  |
+| Image Upload | Multer, Cloudinary, multer-storage-cloudinary |
+| Validation   | Joi                                           |
+| Sessions     | connect-mongo                                 |
+
+---
+
+## 🚦 Prerequisites
 
 - [Node.js](https://nodejs.org/) (v16 or above recommended)
 - [MongoDB](https://www.mongodb.com/) (local or Atlas)
@@ -35,11 +47,11 @@ WanderEarth is a full-stack web application for sharing, discovering, and review
 
 ---
 
-## Environment Variables
+## ⚙️ Environment Variables
 
-Create a `.env` file in the root directory and add the following:
+Create a `.env` file in the root directory and add:
 
-```
+```env
 ATLASDB_URL=your_mongodb_connection_string
 SECRET=your_session_secret
 CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
@@ -49,13 +61,13 @@ CLOUDINARY_SECRET=your_cloudinary_api_secret
 
 ---
 
-## Installation
+## 🚀 Installation & Running Locally
 
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/wanderlust.git
-   cd wanderlust
+   git clone https://github.com/Kakarot30/wanderEarth.git
+   cd wanderEarth
    ```
 
 2. **Install dependencies:**
@@ -70,11 +82,7 @@ CLOUDINARY_SECRET=your_cloudinary_api_secret
 
    ```bash
    npm start
-   ```
-
-   or
-
-   ```bash
+   # or
    node app.js
    ```
 
@@ -83,9 +91,9 @@ CLOUDINARY_SECRET=your_cloudinary_api_secret
 
 ---
 
-## Folder Structure
+## 🗂️ Folder Structure
 
-```
+```text
 Majorproject/
 │
 ├── models/           # Mongoose models (Listing, Review, User)
@@ -103,30 +111,30 @@ Majorproject/
 
 ---
 
-## Usage
+## 🧑‍💻 Usage
 
-- Register a new account or log in.
-- Create a new listing with an image.
-- Browse all listings, view details, and leave reviews.
-- Edit or delete your own listings and reviews.
-
----
-
-## Troubleshooting
-
-- **Image upload errors:** Check your Cloudinary credentials in `.env`.
-- **Database errors:** Ensure MongoDB is running and the connection string is correct.
-- **Port in use:** Change the port in `app.js` if 8080 is already in use.
+- Register a new account or log in
+- Create a new listing with an image
+- Browse all listings, view details, and leave reviews
+- Edit or delete your own listings and reviews
 
 ---
 
-## License
+## 🛟 Troubleshooting
+
+- 🖼️ **Image upload errors:** Check your Cloudinary credentials in `.env`
+- 🍃 **Database errors:** Ensure MongoDB is running and the connection string is correct
+- 🛑 **Port in use:** Change the port in `app.js` if 8080 is already in use
+
+---
+
+## 📄 License
 
 This project is for educational purposes.
 
 ---
 
-## Credits
+## 🙏 Credits
 
 - [Colt Steele's YelpCamp](https://www.udemy.com/course/the-web-developer-bootcamp/) inspired structure
 - [Bootstrap](https://getbootstrap.com/)
@@ -134,4 +142,4 @@ This project is for educational purposes.
 
 ---
 
-**Happy Traveling!**
+<p align="center"><b>🌏 Happy Traveling with WanderEarth! 🌏</b></p>
